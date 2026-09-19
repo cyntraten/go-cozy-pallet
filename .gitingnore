@@ -1,0 +1,9 @@
+# Binaries
+go-cozy-pallet
+*.exe
+*.test
+
+# Test images
+*.png
+*.jpg
+*.jpeg
