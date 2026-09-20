@@ -43,7 +43,7 @@ func main() {
 
 	fmt.Printf("Image format is: %v, Width(Dx): %v, Height(Dy): %v \n", formatName, imageInfo.Dx(), imageInfo.Dy())
 
-	outputImg := remap.ApplyPalette(img, palette.GruvboxDark)
+	outputImg := remap.ApplyDithering(img, palette.GruvboxDark)
 	outFile, err := os.Create(outputPath)
 	if err != nil {
 		log.Fatalf("Create image error: %s\n", err)
