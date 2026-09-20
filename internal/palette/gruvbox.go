@@ -4,6 +4,10 @@ import "image/color"
 
 type Palette []color.RGBA
 
+type RGBFloat struct {
+	R, G, B float64
+}
+
 var GruvboxDark = Palette{
 	// Dark Backgrounds / Shades
 	{R: 40, G: 40, B: 40, A: 255},    // bg0 (#282828)
